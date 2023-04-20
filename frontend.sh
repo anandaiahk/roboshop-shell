@@ -1,6 +1,6 @@
 echo -e "\e[36m>>>>>>>>install nginx <<<<<<<<<<\e[0m"
 yum install nginx -y
-echo "\e[36m>>>>>>>>copy  <<<<<<<<<<\e[0m"
+echo -e "\e[36m>>>>>>>>copy  <<<<<<<<<<\e[0m"
 cp /root/roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
 echo -e "\e[36m>>>>>>>>remove nginx files <<<<<<<<<<\e[0m"
 rm -rf /usr/share/nginx/html/*
