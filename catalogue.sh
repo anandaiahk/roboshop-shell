@@ -25,5 +25,5 @@ cp /root/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 echo -e "\e[36m>>>>>>>>inatall mongodb service <<<<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
 echo -e "\e[36m>>>>>>>>load schemaa <<<<<<<<<<\e[0m"
-mongo --host mongodb-dev.kanand.online</app/schema/catalogue.js
+mongo --host mongodb-dev.kanand.online </app/schema/catalogue.js
 
