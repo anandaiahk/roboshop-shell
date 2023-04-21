@@ -1,7 +1,6 @@
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 yum install nodejs -y
 useradd roboshop
-rm -rf /app
 mkdir /app
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
 cd /app
@@ -13,4 +12,4 @@ systemctl enable catalogue
 systemctl restart catalogue
 cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
-mongo --host 172.31.21.1 </app/schema/catalogue.js
+mongo --host mongodb-dev.kanand.online </app/schema/catalogue.js
