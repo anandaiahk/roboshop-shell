@@ -13,4 +13,4 @@ systemctl enable catalogue
 systemctl restart catalogue
 cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
-mongo --host mongodb-dev.kanand.online </app/schema/catalogue.js
+mongo --host 172.31.21.1 </app/schema/catalogue.js
