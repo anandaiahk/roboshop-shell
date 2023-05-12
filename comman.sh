@@ -27,8 +27,7 @@ func_schema_setup() {
   mongo --host mongodb-dev.kanand.online </app/schema/${component}.js &>>log_file
   func_status_check $?
   fi
-  if[ "$schema_setup" == "mysql" ]; then
-
+  if [ "$schema_setup" == "mysql" ]; then
       print_head " install mysql"
       yum install mysql -y &>>log_file
       func_status_check $?
