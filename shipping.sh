@@ -1,5 +1,5 @@
-script=${realpath "$0"}
-script_path=${dirname "$script"}
+script=$(realpath "$0")
+script_path=$(dirname "$script")
 source ${script_path}/comman.sh
 mysql_root_password=$1
 if [ -z "$mysql_root_password" ]; then

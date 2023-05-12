@@ -1,5 +1,5 @@
-script=${realpath "$0"}
-script_path=${dirname "$script"}
+script=$(realpath "$0")
+script_path=$(dirname "$script")
 source ${script_path}/comman.sh
 print_head " install repos"
 yum install https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y &>>log_file

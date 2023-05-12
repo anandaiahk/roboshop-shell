@@ -1,7 +1,7 @@
-script=${realpath "$0"}
-script_path=${dirname "$script"}
+script=$(realpath "$0")
+script_path=$(dirname "$script")
 source ${script_path}/comman.sh
- print_head " install nginx"
+ print_head "install nginx"
 yum install nginx -y &>>log_file
 func_status_check $?
  print_head " copy the roboshop config file"
