@@ -106,3 +106,4 @@ func_python() {
   sed -i -e "s|rabbitmq_appuser_password|${rabbitmq_appuser_password}"| ${script_path}/${component}.service &>>log_file
      func_status_check $?
   func_systemd_setup
+  }
