@@ -32,7 +32,7 @@ func_schema_setup() {
       yum install mysql -y &>>log_file
       func_status_check $?
       print_head "load schema"
-      mysql -h mysql-dev.kanand.online -uroot -p${mysql_root_password} < /app/schema/${component}.sql &>>log_file
+      mysql -h mysql-dev.kanand.online -uroot -p${mysql_root_password} < /app/schema/${component}.sql
       func_status_check $?
     fi
 }
